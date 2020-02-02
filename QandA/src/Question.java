@@ -29,6 +29,8 @@ public class Question {
         break;
       case FILL_IN_BLANK:
       case MULTIPLE_CHOICE:
+    	  this.answerOptions = Arrays.asList(new String[] {"Int", "Double", "Short", "String"});
+    	  break;
       case MATCHING:
             this.answerOptions = new ArrayList<String>();
         break;
@@ -41,7 +43,7 @@ public class Question {
 
 
   }
-
+  
   public String getDisplayQuestion() {
     return displayQuestion;
   }
