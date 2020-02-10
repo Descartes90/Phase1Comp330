@@ -32,11 +32,9 @@ public class Question {
     	  this.answerOptions = Arrays.asList(new String[] {"Int", "Double", "Short", "String"});
     	  break;
       case MATCHING:
-            this.answerOptions = new ArrayList<String>();
-        break;
-
+            this.answerOptions = Arrays.asList(new String[] {"Chicago", "Green", "Blue", "Third"});
+            break;
     }
-
     this.displayQuestion = displayQuestion;
     this.correctAnswer = correctAnswer;
     this.type = type;
